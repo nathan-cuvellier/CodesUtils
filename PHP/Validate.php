@@ -171,7 +171,7 @@ class Validate {
 
     /**
      * @param String $field
-     * @param $db ==> Connection at DataBase par variable to avoid use a require
+     * @param $db ==> Connection at DataBase by variable to avoid use a require
      * @param String $table /!\ The name of table must be that $field
      * @param String $error
      */
