@@ -24,6 +24,12 @@ class DataBase {
         }
     }
     
+    /**
+     * Function query
+     *
+     * @param $statement
+     * @param $params = false
+     */
     public function query(String $statement, $params = false) {
         if($params != false) {
             $req = $this->pdo->prepare($statement)->execute($params);
