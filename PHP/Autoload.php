@@ -14,6 +14,7 @@ class Autoload {
     }
 
     /**
+	 * Use a array if the autolaod is in a class
      * @return void
      */
     function register() {
@@ -26,8 +27,7 @@ class Autoload {
      * @return void
      */
     function my_autoload($class) {
-        $path = __DIR__ . DIRECTORY_SEPARATOR; //  "/var/www/ProjectSIN/public/class/"
-        var_dump($path);
+        $path = __DIR__ . DIRECTORY_SEPARATOR;
         if (file_exists(__DIR__ . DIRECTORY_SEPARATOR . "$class.php")) {
             require_once $path . "$class.php";
         }
