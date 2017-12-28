@@ -1,3 +1,6 @@
+/**
+*	A faire en Javascript
+*/
 $(document).ready(function(){
 	$('a.disabled').on('click', function (event) {
         event.preventDefault()

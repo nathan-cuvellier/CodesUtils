@@ -15,6 +15,7 @@ class Autoload {
 
     /**
      * Use a array if the autolaod is in a class
+     * Else use only string with the name of your autoload
      * @return void
      */
     function register() {
